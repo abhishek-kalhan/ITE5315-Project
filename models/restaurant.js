@@ -2,13 +2,10 @@
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
-coordSchema = new Schema({
-  0: Number,
-  1: Number,
-});
+
 adressSchema = new Schema({
   building: String,
-  coord: [coordSchema],
+  coord: Array,
   street: String,
   zipcode: String,
 });
